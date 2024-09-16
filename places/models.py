@@ -49,7 +49,7 @@ class Address(models.Model):
         """
 
         return (
-            f"{self.get_address()} {self.district} {self.city}, {self.county}, "
+            f"{self.get_address()} {self.district}, {self.city}, {self.county}, "
             f"{self.country}")
 
     class Meta:
