@@ -89,6 +89,7 @@ class County(models.Model):
     country = models.ForeignKey(
         'places.Country', verbose_name='country', on_delete=models.CASCADE, null=True)
     code = models.CharField('code', max_length=10, blank=True)
+    is_state = models.BooleanField('es estado de USA?', default=False)
 
     def __str__(self):
         return self.name
